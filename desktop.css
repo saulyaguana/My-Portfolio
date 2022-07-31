@@ -60,3 +60,18 @@ header .head-myself {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
+
+.plans-container--slider {
+    overflow-x: auto;
+    justify-content: space-around;
+}
+
+/*Footer*/
+
+footer {
+    justify-content: center;
+}
+
+footer .facebook, .instagram, .twitter, .linkedin {
+    margin: 0 20px;
+}
