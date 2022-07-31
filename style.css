@@ -1,0 +1,232 @@
+:root {
+    --primary: #FF6464;
+    --secondry: #00A8CC;
+    --dark: #21243D;
+    --light: #8695A4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Heebo', sans-serif;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header .header-nav {
+    display: none;
+}
+
+header .head-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url("./assets/icons/menu.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+header .head-myself {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+header .head-myself img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+header .head-text-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header .head-text-container h1 {
+    font-size: 3.2rem;
+    color: var(--dark);
+    line-height: 4rem;
+}
+
+header .head-text-container p {
+    color: var(--dark);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+header .head-text-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    width: 208px;
+    height: 47px;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 27px;
+}
+
+/*Main*/
+
+main {
+    padding-bottom: 40px;
+}
+
+main .main-tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+
+main .main-tittle p {
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-top: 10px;
+}
+
+.principal-section-info{
+    background-color: var(--secondry);
+    padding-bottom: 17px;
+}
+
+main .principal-section-info .principal-card--container {
+    background-color: white;
+    width: 90%;
+    min-height: 250px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 17px;
+}
+
+.principal-card--container .container-info-card h3 a {
+    color: var(--dark);
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.principal-card--container .container-info-card p {
+    font-size: 1.6rem;
+    color: var(--dark);
+    font-weight: 400;
+}
+
+.principal-card--container .container-info-card p:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*.secondary-section-info {
+    background-color: var(--light);
+}*/
+
+.first-container--img {
+    text-align: center;
+    /**/
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    min-height: 250px;
+    margin: 50px 5px 0;
+    padding: 15px 15px;
+    background-color: var(--dark);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.first-container--img img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.first-container--img figcaption a {
+    color: var(--light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.border-bottom {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid #E0E0E0;
+    margin-top: 20px;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+footer .facebook, .instagram, .twitter, .linkedin{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .facebook {
+    
+    background-image: url(./assets/icons/fb.svg);
+}
+
+footer .instagram {
+    
+    background-image: url(./assets/icons/insta.svg);
+}
+
+footer .twitter {
+    background-image: url(./assets/icons/Vector.svg);
+    width: 35px;
+}
+
+footer .linkedin {
+    background-image: url(./assets/icons/Linkedin.svg);
+}
