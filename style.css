@@ -128,11 +128,22 @@ main .principal-section-info .principal-card--container {
     margin-top: 17px;
 }
 
-.principal-card--container .container-info-card h3 a {
+.principal-card--container .container-info-card h3 {
     color: var(--dark);
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 3rem;
+}
+
+.principal-card--container .container-info-card .img-courses {
+    width: 160px;
+    height: 160px;
+    margin: 10px auto;
+}
+
+.principal-card--container .container-info-card .img-courses img {
+    width: 100%;
+    height: 100%;
 }
 
 .principal-card--container .container-info-card p {

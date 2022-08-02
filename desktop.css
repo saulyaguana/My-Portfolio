@@ -57,8 +57,9 @@ header .head-myself {
 }
 
 .grid-container-info {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
 }
 
 .plans-container--slider {
