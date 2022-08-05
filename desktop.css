@@ -26,12 +26,16 @@ header .header-nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 2rem;
-    padding: 10px;
+    padding: 5px;
 }
 
 header .header-nav ul li a:hover {
-    border: 1px solid #E0E0E0;
+    border: 3px solid #E0E0E0;
     border-radius: 5px;
+}
+
+header .header-nav ul li:hover {
+    transform: skew(-10deg);
 }
 
 .desk-container-header {
@@ -48,6 +52,10 @@ header .head-text-container {
 
 header .head-text-container a {
     margin-left: 0;
+}
+
+header .head-text-container a:hover {
+    transform: scale(0.8);
 }
 
 header .head-myself {
