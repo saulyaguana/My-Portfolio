@@ -20,6 +20,7 @@ header .header-nav ul {
 header .header-nav ul li {
     margin-right: 40px;
     list-style: none;
+    transition: transform 1s;
 }
 
 header .header-nav ul li a {
@@ -35,7 +36,7 @@ header .header-nav ul li a:hover {
 }
 
 header .header-nav ul li:hover {
-    transform: skew(-10deg);
+    transform: skew(-20deg);
 }
 
 .desk-container-header {
@@ -52,6 +53,7 @@ header .head-text-container {
 
 header .head-text-container a {
     margin-left: 0;
+    transition: transform 1.3s;
 }
 
 header .head-text-container a:hover {
